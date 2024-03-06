@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Frontend Mentor challenge for a profile card component">
+    <meta
+      name="description"
+      content="Frontend Mentor challenge for a profile card component"
+    />
+
+    <link rel="preload" href="./assets/images/image-victor.webp" as="image" />
 
     <link
       rel="icon"
@@ -12,17 +17,65 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>Frontend Mentor | Profile card component</title>
+    <link rel="stylesheet" href="./css/output.css" />
 
+    <title>Frontend Mentor | Profile card component</title>
   </head>
-  <body>
-    Victor Crest 26 London 80K Followers 803K Likes 1.4K Photos
-    <div class="attribution">
+
+  <body
+    class="bg-dark-cyan min-h-screen flex flex-col flex-wrap justify-center items-center font-primary-font p-6 relative"
+  >
+    <main
+      class="bg-white container mx-auto max-w-[350px] flex flex-col gap-4 items-center rounded-2xl"
+    >
+      <div class="size-[110px] mt-[5.6rem]">
+        <img
+          class="rounded-full border-white border-[5px] aspect-square"
+          src="./assets/images/image-victor.webp"
+          alt="picture of Victor Crest"
+        />
+      </div>
+
+      <div class="text-center px-4 space-y-1">
+        <p class="text-lg">
+          <span class="font-bold text-desaturated-blue">Victor Crest</span>
+          <span class="text-dark-grayish-blue">26</span>
+        </p>
+        <p class="text-dark-grayish-blue text-sm">London</p>
+      </div>
+
+      <hr class="self-stretch mt-3" />
+
+      <ul class="flex px-4 pb-6 gap-10 flex-wrap justify-stretch text-center">
+        <li class="">
+          <span class="font-bold text-xl text-desaturated-blue">80K</span>
+          <p class="text-xs text-dark-gray tracking-widest">Followers</p>
+        </li>
+        <li class="">
+          <span class="font-bold text-xl text-desaturated-blue">803K</span>
+          <p class="text-xs text-dark-gray tracking-widest">Likes</p>
+        </li>
+        <li class="">
+          <span class="font-bold text-xl text-desaturated-blue">1.4K</span>
+          <p class="text-xs text-dark-gray tracking-widest">Photos</p>
+        </li>
+      </ul>
+    </main>
+
+    <footer class="text-center mt-4 bottom-0 left-0 right-0 text-lg font-bold">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      <a
+        class="bg-black text-dark-cyan hover:bg-dark-cyan hover:text-black"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+      >. Coded by
+      <a
+        class="bg-black text-dark-cyan hover:bg-dark-cyan hover:text-black"
+        href="#"
+        >Fejiro Abere</a
+      >.
+    </footer>
   </body>
 </html>
 

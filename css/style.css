@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Kumbh Sans";
+    src: url(../assets/fonts/static/KumbhSans-Regular.ttf) format("truetype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Kumbh Sans";
+    src: url(../assets/fonts/static/KumbhSans-Bold.ttf) format("truetype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  main {
+    background-image: url(../assets/images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: 100% contain;
+  }
+}
