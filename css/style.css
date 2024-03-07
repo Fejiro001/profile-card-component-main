@@ -5,17 +5,28 @@
 @layer base {
   @font-face {
     font-family: "Kumbh Sans";
-    src: url(../assets/fonts/static/KumbhSans-Regular.ttf) format("truetype");
+    src: url(../assets/fonts/KumbhSans-VariableFont_YOPQ\wght.ttf)
+      format("truetype");
     font-display: swap;
     font-style: normal;
-    font-weight: 400;
   }
-  @font-face {
-    font-family: "Kumbh Sans";
-    src: url(../assets/fonts/static/KumbhSans-Bold.ttf) format("truetype");
-    font-display: swap;
-    font-style: normal;
-    font-weight: 700;
+
+  body {
+    background-image: url(../assets/images/bg-pattern-top.svg),
+      url(../assets/images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat no-repeat;
+    background-position: -730px -880px, 600px 300px;
+    background-size: cover, cover;
+  }
+  @media only screen and (max-width: 1024px) {
+    body {
+      background-position: -600px -500px, 600px 300px;
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    body {
+      background-position: -450px -400px, 150px 300px;
+    }
   }
 
   main {

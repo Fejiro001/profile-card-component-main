@@ -6,7 +6,7 @@ module.exports = {
       lg: "clamp(1.125rem, 1vw, 3rem)",
       sm: "clamp(0.875rem, 1vw, 2.5rem)",
       xl: "clamp(1.25rem, 1vw, 3.2rem)",
-      xs: "clamp(0.75rem, 1vw, 2rem)"
+      xs: "clamp(0.75rem, .5vw, 2rem)"
     },
     extend: {
       colors: {
