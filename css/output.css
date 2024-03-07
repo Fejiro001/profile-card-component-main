@@ -447,7 +447,7 @@ video {
 @font-face {
   font-family: "Kumbh Sans";
 
-  src: url(../assets/fonts/KumbhSans-VariableFont_YOPQ\wght.ttf)
+  src: url(../assets/fonts/KumbhSans-VariableFont_YOPQ\,wght.ttf)
       format("truetype");
 
   font-display: swap;
